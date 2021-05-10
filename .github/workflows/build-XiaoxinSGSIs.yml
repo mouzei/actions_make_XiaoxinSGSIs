@@ -136,4 +136,7 @@ jobs:
          uses: actions/upload-artifact@v2
          with: 
            name: XiaoxinSGSIs
-           path: ${{ steps.var.outputs.pack_sgsi }}
+           path: ${{ teps.var.outputs.pack_sgsi }}
+
+       - name: Upload SGSI to OneDriveForBussinessInternational
+         if: steps.var.outputs.upload_OneDriveForBussinessInternational == 'true'
